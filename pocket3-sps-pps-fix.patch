@@ -1,0 +1,42 @@
+--- src/dji-decode.c.orig	2026-09-21 16:21:51.014427030 +0000
++++ src/dji-decode.c	2026-09-21 16:21:51.506287854 +0000
+@@ -47,7 +47,7 @@
+ 	struct SwsContext *sws;
+ 	dji_frame_cb cb;
+ 	void *opaque;
+-	bool got_key; /* drop non-key AUs until first keyframe */
++	bool got_key; /* only expose decoded frames after first keyframe */
+ };
+ 
+ static enum AVHWDeviceType hw_to_av(enum dji_hw hw)
+@@ -186,10 +186,14 @@
+ 	if (!d || !d->cctx)
+ 		return;
+ 
+-	if (!d->got_key) {
+-		if (!keyframe)
+-			return; /* wait for a clean entry point */
++	/* IMPORTANT: feed pre-key AUs to FFmpeg as well. DJI may send SPS/PPS
++	 * in an AU before the first IDR after capture starts. Dropping those AUs
++	 * here loses the parameter sets, causing "non-existing PPS 0" forever
++	 * when the IDR arrives. FFmpeg can safely parse/retain parameter sets
++	 * from pre-key packets; we simply suppress output until a keyframe. */
++	if (keyframe && !d->got_key) {
+ 		d->got_key = true;
++		DJI_LOG("decoder synchronized at first keyframe");
+ 	}
+ 
+ 	av_packet_unref(d->pkt);
+@@ -205,6 +209,12 @@
+ 		return;
+ 
+ 	while (avcodec_receive_frame(d->cctx, d->frame) == 0) {
++		/* Do not expose potentially incomplete pre-IDR pictures to OBS. */
++		if (!d->got_key) {
++			av_frame_unref(d->frame);
++			continue;
++		}
++
+ 		AVFrame *f = d->frame;
+ 		if (d->hw_device && f->format == d->hw_pix_fmt) {
+ 			av_frame_unref(d->sw_frame);

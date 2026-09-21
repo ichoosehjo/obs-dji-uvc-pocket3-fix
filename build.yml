@@ -1,0 +1,59 @@
+name: build-windows
+on:
+  push: { branches: [main] }
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  windows:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cache obs-studio build
+        uses: actions/cache@v4
+        with:
+          path: obs-studio
+          key: obs-studio-32.1.2-v2
+
+      - name: Build
+        shell: pwsh
+        run: .\build-windows.ps1 2>&1 | Tee-Object -FilePath build-output.log
+
+      - name: Upload build log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-log
+          path: build-output.log
+
+      - name: Publish log to ci-logs branch
+        if: always()
+        shell: pwsh
+        run: |
+          git config user.name "ci"
+          git config user.email "ci@local"
+          git checkout --orphan ci-logs
+          git reset
+          git add -f build-output.log
+          git commit -m "ci log run $env:GITHUB_RUN_ID"
+          git push -f origin ci-logs
+
+      - name: Stage
+        shell: pwsh
+        run: .\installer\stage.ps1
+
+      - name: Installer
+        shell: pwsh
+        run: |
+          choco install innosetup -y --no-progress
+          & "C:\Program Files (x86)\Inno Setup 6\iscc.exe" installer\obs-dji-uvc.iss
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: obs-dji-uvc-windows
+          path: |
+            installer/Output/*.exe
+            build/RelWithDebInfo/obs-dji-uvc.dll

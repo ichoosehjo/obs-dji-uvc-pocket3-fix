@@ -1,0 +1,8 @@
+/build/
+/installer/staging/
+/installer/Output/
+/obs-studio/
+*.o
+*.obj
+*.dll
+*.so
