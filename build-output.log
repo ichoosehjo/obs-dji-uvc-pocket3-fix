@@ -1,0 +1,363 @@
+Cloning into 'D:\a\obs-dji-uvc-pocket3-fix\obs-dji-uvc-pocket3-fix\obs-studio'...
+warning: refs/tags/32.1.2 c17423ce05899ecb93f678601b3feaa8a469b180 is not a commit!
+Note: switching to 'fb4d98bf88fae5fc85cb11fc57f7c5e309282194'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+Submodule 'plugins/win-dshow/libdshowcapture' (https://github.com/obsproject/libdshowcapture.git) registered for path 'deps/libdshowcapture/src'
+Submodule 'plugins/obs-browser' (https://github.com/obsproject/obs-browser.git) registered for path 'plugins/obs-browser'
+Submodule 'plugins/obs-websocket' (https://github.com/obsproject/obs-websocket.git) registered for path 'plugins/obs-websocket'
+Cloning into 'D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/deps/libdshowcapture/src'...
+Cloning into 'D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/plugins/obs-browser'...
+Cloning into 'D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/plugins/obs-websocket'...
+Submodule path 'deps/libdshowcapture/src': checked out '8878638324393815512f802640b0d5ce940161f1'
+Submodule 'external/capture-device-support' (https://github.com/elgatosf/capture-device-support) registered for path 'deps/libdshowcapture/src/external/capture-device-support'
+Cloning into 'D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/deps/libdshowcapture/src/external/capture-device-support'...
+Submodule path 'deps/libdshowcapture/src/external/capture-device-support': checked out 'fe9630974d47f51bf54826e72fb8b654e620aa93'
+Submodule path 'plugins/obs-browser': checked out 'ea04212e4bbadd077f9e6038758c4e4779c24fa3'
+Submodule path 'plugins/obs-websocket': checked out '1fcb95b15aa88b1b7e9bda3f9c8650e314377169'
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.20348.
+-- The C compiler identification is MSVC 19.44.35228.0
+-- The CXX compiler identification is MSVC 19.44.35228.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Checking for interprocedural optimization support
+-- Checking for interprocedural optimization support - available
+-- Checking for interprocedural optimization support - enabled [Release, MinSizeRel]
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.20348.
+-- The C compiler identification is MSVC 19.44.35228.0
+-- The CXX compiler identification is MSVC 19.44.35228.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x86/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x86/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Checking for interprocedural optimization support
+-- Checking for interprocedural optimization support - available
+-- Checking for interprocedural optimization support - enabled [Release, MinSizeRel]
+-- Setting up Pre-Built obs-deps (x86)
+-- Downloading https://github.com/obsproject/obs-deps/releases/download/2025-08-23/windows-deps-2025-08-23-x86.zip
+-- Downloading https://github.com/obsproject/obs-deps/releases/download/2025-08-23/windows-deps-2025-08-23-x86.zip - done
+-- Setting up Pre-Built obs-deps (x86) - done
+CMake Warning (dev) at cmake/finders/FindDetours.cmake:65 (message):
+  Failed to find detours version.
+Call Stack (most recent call first):
+  plugins/win-capture/graphics-hook/CMakeLists.txt:3 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Detours: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x86/lib/detours.lib (found version "0.0.0")
+-- Found Vulkan: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x86/lib/vulkan-1.lib (found version "1.3.216")  missing components: glslc glslangValidator
+CMake Warning at plugins/win-dshow/virtualcam-module/CMakeLists.txt:14 (message):
+  Empty Virtual Camera GUID set.
+
+
+-- Configuring done (9.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/build_x86
+-- Setting up Pre-Built obs-deps (x64)
+-- Downloading https://github.com/obsproject/obs-deps/releases/download/2025-08-23/windows-deps-2025-08-23-x64.zip
+-- Downloading https://github.com/obsproject/obs-deps/releases/download/2025-08-23/windows-deps-2025-08-23-x64.zip - done
+-- Setting up Pre-Built obs-deps (x64) - done
+-- Setting up Pre-Built Qt6 (x64)
+-- Downloading https://github.com/obsproject/obs-deps/releases/download/2025-08-23/windows-deps-qt6-2025-08-23-x64.zip
+-- Downloading https://github.com/obsproject/obs-deps/releases/download/2025-08-23/windows-deps-qt6-2025-08-23-x64.zip - done
+-- Setting up Pre-Built Qt6 (x64) - done
+-- Found SIMDe: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/include (found version "0.8.2")
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Found Threads: TRUE
+-- Found FFmpeg: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/avformat-61.dll;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/avutil-59.dll;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/swscale-8.dll;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/swresample-5.dll;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/avcodec-61.dll (found suitable version "7.1", minimum required is "6.1") found components: avformat avutil swscale swresample avcodec
+-- Found ZLIB: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/lib/zlib.lib (found version "1.3.1")
+-- Found Uthash: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/include (found version "2.3.0")
+-- Found jansson: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/lib/jansson.lib (found version "2.14.1")
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Failed
+-- Performing Test COMPILER_HAS_DEPRECATED
+-- Performing Test COMPILER_HAS_DEPRECATED - Success
+-- Found OpenGL: opengl32
+-- aja: Using new libajantv2 library
+CMake Warning (dev) at cmake/finders/FindLibAJANTV2.cmake:100 (message):
+  Failed to find LibAJANTV2 version.
+Call Stack (most recent call first):
+  plugins/aja/CMakeLists.txt:10 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found LibAJANTV2: optimized;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/lib/ajantv2.lib;debug;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/lib/ajantv2d.lib (found version "0.0.0")
+-- Found FFmpeg: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/avcodec-61.dll;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/avfilter-10.dll;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/avdevice-61.dll;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/avutil-59.dll;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/swscale-8.dll;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/avformat-61.dll;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/swresample-5.dll (found suitable version "7.1", minimum required is "6.1") found components: avcodec avfilter avdevice avutil swscale avformat swresample
+-- Found FFmpeg: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/avcodec-61.dll;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/avfilter-10.dll;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/avdevice-61.dll;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/avutil-59.dll;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/swscale-8.dll;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/avformat-61.dll;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/swresample-5.dll (found version "7.1") found components: avcodec avdevice avutil avformat
+-- Found AMF: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/include (found suitable version "1.4.36", minimum required is "1.4.29")
+-- Found FFmpeg: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/avcodec-61.dll;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/avfilter-10.dll;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/avdevice-61.dll;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/avutil-59.dll;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/swscale-8.dll;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/avformat-61.dll;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/swresample-5.dll (found version "7.1") found components: avcodec avutil avformat
+CMake Warning (dev) at cmake/finders/FindLibspeexdsp.cmake:87 (message):
+  Failed to find Libspeexdsp version.
+Call Stack (most recent call first):
+  plugins/obs-filters/cmake/speexdsp.cmake:4 (find_package)
+  plugins/obs-filters/CMakeLists.txt:34 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Libspeexdsp: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/lib/speexdsp.lib (found version "0.0.0")
+CMake Warning (dev) at cmake/finders/FindLibrnnoise.cmake:87 (message):
+  Failed to find Librnnoise version.
+Call Stack (most recent call first):
+  plugins/obs-filters/cmake/rnnoise.cmake:5 (find_package)
+  plugins/obs-filters/CMakeLists.txt:35 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Librnnoise: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/lib/rnnoise.lib (found version "0.0.0")
+-- Found FFnvcodec: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/include (found suitable version "12.2", minimum required is "12")
+-- Found VPL: optimized;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/lib/vpl.lib;debug;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/lib/vpld.lib (Required is at least version "2.9")
+-- Found VPL: optimized;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/lib/vpl.lib;debug;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/lib/vpld.lib (found suitable version "2.14", minimum required is "2.9")
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found CURL: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/lib/cmake/CURL/CURLConfig.cmake (found version "8.12.1-DEV")
+-- Found nlohmann_json: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found suitable version "3.11.3", minimum required is "3.11")
+-- Found Websocketpp: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/include (found suitable version "0.8.2", minimum required is "0.8")
+-- Found Asio: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/include (found suitable version "1.32.0", minimum required is "1.12.1")
+-- Found Libx264: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/libx264-164.dll (found version "0.164.3106")
+-- Found Freetype: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/lib/freetype.lib (found version "2.13.3")
+CMake Warning (dev) at cmake/finders/FindDetours.cmake:65 (message):
+  Failed to find detours version.
+Call Stack (most recent call first):
+  plugins/win-capture/graphics-hook/CMakeLists.txt:3 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Detours: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/lib/detours.lib (found version "0.0.0")
+-- Found Vulkan: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/lib/vulkan-1.lib (found version "1.3.216")  missing components: glslc glslangValidator
+-- Found FFmpeg: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/avcodec-61.dll;D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/.deps/obs-deps-2025-08-23-x64/bin/avutil-59.dll (found version "7.1") found components: avcodec avutil
+CMake Warning at plugins/win-dshow/virtualcam-module/CMakeLists.txt:14 (message):
+  Empty Virtual Camera GUID set.
+
+
+                      _                   _             _ _       
+                 ___ | |__  ___       ___| |_ _   _  __| (_) ___  
+                / _ \| '_ \/ __|_____/ __| __| | | |/ _` | |/ _ \ 
+               | (_) | |_) \__ \_____\__ \ |_| |_| | (_| | | (_) |
+                \___/|_.__/|___/     |___/\__|\__,_|\__,_|_|\___/ 
+
+OBS:  Application Version: 32.1.2 - Build Number: 35625713759
+==================================================================================
+
+
+------------------------       Enabled Features           ------------------------
+ - Direct3D 11 renderer
+ - NVIDIA Audio FX support
+ - NVIDIA Video FX support
+ - OpenGL renderer
+ - Plugin Support
+ - RNNoise noise suppression
+ - SpeexDSP noise suppression
+------------------------       Disabled Features          ------------------------
+ - Browser sources are not enabled by default (set CEF_ROOT_DIR and ENABLE_BROWSER)
+ - User Interface
+ - Virtual Camera Support (empty GUID)
+------------------------        Enabled Modules           ------------------------
+ - aja
+ - coreaudio-encoder
+ - decklink
+ - graphics-hook
+ - image-source
+ - libobs-d3d11
+ - libobs-winrt
+ - nv-filters
+ - obs-ffmpeg
+ - obs-filters
+ - obs-nvenc
+ - obs-outputs
+ - obs-qsv11
+ - obs-text
+ - obs-transitions
+ - obs-vst
+ - obs-webrtc
+ - obs-websocket
+ - obs-x264
+ - rtmp-services
+ - text-freetype2
+ - vlc-video
+ - win-capture
+ - win-dshow
+ - win-wasapi
+------------------------        Disabled Modules          ------------------------
+ - obs-browser
+ - obs-libfdk
+ - test-input
+----------------------------------------------------------------------------------
+-- Configuring done (42.8s)
+-- Generating done (1.5s)
+-- Build files have been written to: D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/build
+MSBuild version 17.14.51+25f168cee for .NET Framework
+
+  1>Checking Build System
+  Building Custom Rule D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/libobs/CMakeLists.txt
+  obsversion.c
+  libobs-version.vcxproj -> D:\a\obs-dji-uvc-pocket3-fix\obs-dji-uvc-pocket3-fix\obs-studio\build\libobs\libobs-version.dir\RelWithDebInfo\libobs-version.lib
+  Building Custom Rule D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/deps/libcaption/CMakeLists.txt
+  caption.c
+  cea708.c
+  eia608.c
+  eia608_charmap.c
+  eia608_from_utf8.c
+  mpeg.c
+  scc.c
+  srt.c
+  utf8.c
+  xds.c
+  caption.vcxproj -> D:\a\obs-dji-uvc-pocket3-fix\obs-dji-uvc-pocket3-fix\obs-studio\build\deps\libcaption\RelWithDebInfo\caption.lib
+  Building Custom Rule D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/deps/w32-pthreads/CMakeLists.txt
+  pthread.c
+     Creating library D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/build/deps/w32-pthreads/RelWithDebInfo/w32-pthreads.lib and object D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/build/deps/w32-pthreads/RelWithDebInfo/w32-pthreads.exp
+  w32-pthreads.vcxproj -> D:\a\obs-dji-uvc-pocket3-fix\obs-dji-uvc-pocket3-fix\obs-studio\build\deps\w32-pthreads\RelWithDebInfo\w32-pthreads.dll
+  Copy w32-pthreads to destination
+  Building Custom Rule D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/libobs/CMakeLists.txt
+  obs-hevc.c
+  obs-audio-controls.c
+  obs-audio.c
+  obs-av1.c
+  obs-avc.c
+  obs-canvas.c
+  obs-display.c
+  obs-encoder.c
+  obs-hotkey-name-map.c
+  obs-hotkey.c
+  obs-missing-files.c
+  obs-module.c
+  obs-nal.c
+  obs-output-delay.c
+  obs-output.c
+  obs-properties.c
+  obs-scene.c
+  obs-service.c
+  obs-source-deinterlace.c
+  obs-source-transition.c
+  obs-source.c
+  obs-video-gpu-encode.c
+  obs-video.c
+  obs-view.c
+  obs.c
+  array-serializer.c
+  base.c
+  bitstream.c
+  bmem.c
+  buffered-file-serializer.c
+  cf-lexer.c
+  cf-parser.c
+  config-file.c
+  crc32.c
+  dstr.c
+  file-serializer.c
+  lexer.c
+  pipe.c
+  platform.c
+  profiler.c
+  source-profiler.c
+  task.c
+  text-lookup.c
+  utf8.c
+  calldata.c
+  decl.c
+  proc.c
+  signal.c
+  audio-io.c
+  audio-resampler-ffmpeg.c
+  format-conversion.c
+  media-remux.c
+  video-fourcc.c
+  video-frame.c
+  video-io.c
+  video-matrices.c
+  video-scaler-ffmpeg.c
+  axisang.c
+  bounds.c
+  effect-parser.c
+  effect.c
+  graphics-ffmpeg.c
+  graphics-imports.c
+  graphics.c
+  image-file.c
+  libnsgif.c
+  math-extra.c
+  matrix3.c
+  matrix4.c
+  plane.c
+  quat.c
+  shader-parser.c
+  texture-render.c
+  vec2.c
+  vec3.c
+  vec4.c
+  wasapi-enum-devices.c
+  wasapi-monitoring-available.c
+  wasapi-output.c
+  obs-windows.c
+  pipe-windows.c
+  platform-windows.c
+  threading-windows.c
+  device-enum.c
+  window-helpers.c
+  obfuscate.c
+  obs-data.c
+  obs-win-crash-handler.c
+     Creating library D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/build/libobs/RelWithDebInfo/obs.lib and object D:/a/obs-dji-uvc-pocket3-fix/obs-dji-uvc-pocket3-fix/obs-studio/build/libobs/RelWithDebInfo/obs.exp
+  libobs.vcxproj -> D:\a\obs-dji-uvc-pocket3-fix\obs-dji-uvc-pocket3-fix\obs-studio\build\libobs\RelWithDebInfo\obs.dll
+  Copy libobs to destination
+  Copy libobs resources to data directory
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.20348.
+-- The C compiler identification is MSVC 19.44.35228.0
+-- The CXX compiler identification is MSVC 19.44.35228.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Error at CMakeLists.txt:28 (find_package):
+  By not providing "FindFFmpeg.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "FFmpeg", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "FFmpeg" with any
+  of the following names:
+
+    FFmpegConfig.cmake
+    ffmpeg-config.cmake
+
+  Add the installation prefix of "FFmpeg" to CMAKE_PREFIX_PATH or set
+  "FFmpeg_DIR" to a directory containing one of the above files.  If "FFmpeg"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+
+-- Configuring incomplete, errors occurred!
