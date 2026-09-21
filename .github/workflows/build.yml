@@ -18,9 +18,16 @@ jobs:
           path: obs-studio
           key: obs-studio-32.1.2-v2
 
+      - name: Install FFmpeg development files
+        shell: pwsh
+        run: |
+          choco install ffmpeg-shared -y --no-progress
+
       - name: Build
         shell: pwsh
         run: .\build-windows.ps1 2>&1 | Tee-Object -FilePath build-output.log
+
+      - name: Upload build log
 
       - name: Upload build log
         if: always()
